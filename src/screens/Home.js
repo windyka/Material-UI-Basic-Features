@@ -7,6 +7,7 @@ import AppBarSearch from '../components/appBars/appBarSearch/AppBarSearch';
 import AppBarDense from '../components/appBars/appBarDenses/AppBarDense';
 import AppBarBottom from '../components/appBars/appBarBottoms/AppBarBottom';
 import AvatarImage from '../components/avatars/AvatarImage';
+import AvatarLetter from '../components/avatars/AvatarLetter';
 
 class Homes extends Component {
   render() {
@@ -20,6 +21,7 @@ class Homes extends Component {
           <Route path="/app-bar/dense" component={AppBarDense} />
           <Route path="/app-bar/bottom" component={AppBarBottom} />
           <Route path="/avatar/image" component={AvatarImage} />
+          <Route path="/avatar/letter" component={AvatarLetter} />
         </Switch>
       </div>
     );
