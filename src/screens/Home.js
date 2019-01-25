@@ -10,6 +10,8 @@ import AvatarImage from '../components/avatars/AvatarImage';
 import AvatarLetter from '../components/avatars/AvatarLetter';
 import AvatarIcon from '../components/avatars/AvatarIcon';
 import BadgeSimple from '../components/badges/simpleBadges/BadgeSimple';
+import BadgeMaxValue from '../components/badges/maximumValue/BadgeMaxValue';
+import BadgeDot from '../components/badges/dotBadges/BadgeDot';
 
 class Homes extends Component {
   render() {
@@ -26,6 +28,8 @@ class Homes extends Component {
           <Route path="/avatar/letter" component={AvatarLetter} />
           <Route path="/avatar/icons" component={AvatarIcon} />
           <Route path="/badge/simple" component={BadgeSimple} />
+          <Route path="/badge/max-value" component={BadgeMaxValue} />
+          <Route path="/badge/dot" component={BadgeDot} />
         </Switch>
       </div>
     );
