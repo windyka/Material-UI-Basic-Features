@@ -17,6 +17,7 @@ import BadgeCustomized from '../components/badges/customizedBadge/BadgeCustomize
 import BottomNavigation from '../components/bottomNavigations/bottomNav/BottomNavigation';
 import BottomNavNoLabel from '../components/bottomNavigations/bottomNavNoLabels/BottomNavNoLabel';
 import ButtonContained from '../components/buttons/containedButtons/ButtonContained';
+import ButtonText from '../components/buttons/textButton/ButtonText';
 
 class Homes extends Component {
   render() {
@@ -40,6 +41,7 @@ class Homes extends Component {
           <Route path="/bottom/navigation" component={BottomNavigation} />
           <Route path="/bottom/no-label" component={BottomNavNoLabel} />
           <Route path="/button/contained" component={ButtonContained} />
+          <Route path="/button/text" component={ButtonText} />
         </Switch>
       </div>
     );
