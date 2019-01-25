@@ -12,6 +12,8 @@ import AvatarIcon from '../components/avatars/AvatarIcon';
 import BadgeSimple from '../components/badges/simpleBadges/BadgeSimple';
 import BadgeMaxValue from '../components/badges/maximumValue/BadgeMaxValue';
 import BadgeDot from '../components/badges/dotBadges/BadgeDot';
+import BadgeVisibility from '../components/badges/badgeVisibility/BadgeVisibility';
+import BadgeCustomized from '../components/badges/customizedBadge/BadgeCustomized';
 
 class Homes extends Component {
   render() {
@@ -30,6 +32,8 @@ class Homes extends Component {
           <Route path="/badge/simple" component={BadgeSimple} />
           <Route path="/badge/max-value" component={BadgeMaxValue} />
           <Route path="/badge/dot" component={BadgeDot} />
+          <Route path="/badge/visibility" component={BadgeVisibility} />
+          <Route path="/badge/customized" component={BadgeCustomized} />
         </Switch>
       </div>
     );
