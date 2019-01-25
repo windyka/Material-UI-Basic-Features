@@ -15,6 +15,7 @@ import BadgeDot from '../components/badges/dotBadges/BadgeDot';
 import BadgeVisibility from '../components/badges/badgeVisibility/BadgeVisibility';
 import BadgeCustomized from '../components/badges/customizedBadge/BadgeCustomized';
 import BottomNavigation from '../components/bottomNavigations/bottomNav/BottomNavigation';
+import BottomNavNoLabel from '../components/bottomNavigations/bottomNavNoLabels/BottomNavNoLabel';
 
 class Homes extends Component {
   render() {
@@ -36,6 +37,7 @@ class Homes extends Component {
           <Route path="/badge/visibility" component={BadgeVisibility} />
           <Route path="/badge/customized" component={BadgeCustomized} />
           <Route path="/bottom/navigation" component={BottomNavigation} />
+          <Route path="/bottom/no-label" component={BottomNavNoLabel} />
         </Switch>
       </div>
     );
