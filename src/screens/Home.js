@@ -19,6 +19,7 @@ import BottomNavNoLabel from '../components/bottomNavigations/bottomNavNoLabels/
 import ButtonContained from '../components/buttons/containedButtons/ButtonContained';
 import ButtonText from '../components/buttons/textButton/ButtonText';
 import ButtonOutline from '../components/buttons/outlinedButton/ButtonOutline';
+import ButtonFloatingAction from '../components/buttons/floatingActionButton/ButtonFloatingAction';
 
 class Homes extends Component {
   render() {
@@ -44,6 +45,10 @@ class Homes extends Component {
           <Route path="/button/contained" component={ButtonContained} />
           <Route path="/button/text" component={ButtonText} />
           <Route path="/button/outline" component={ButtonOutline} />
+          <Route
+            path="/button/floating-action"
+            component={ButtonFloatingAction}
+          />
         </Switch>
       </div>
     );
