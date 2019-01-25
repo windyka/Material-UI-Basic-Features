@@ -20,6 +20,7 @@ import ButtonContained from '../components/buttons/containedButtons/ButtonContai
 import ButtonText from '../components/buttons/textButton/ButtonText';
 import ButtonOutline from '../components/buttons/outlinedButton/ButtonOutline';
 import ButtonFloatingAction from '../components/buttons/floatingActionButton/ButtonFloatingAction';
+import ButtonActionItem from '../components/buttons/floatingActionButton/ButtonActionItem';
 
 class Homes extends Component {
   render() {
@@ -49,6 +50,7 @@ class Homes extends Component {
             path="/button/floating-action"
             component={ButtonFloatingAction}
           />
+          <Route path="/button/floating-zoom" component={ButtonActionItem} />
         </Switch>
       </div>
     );
