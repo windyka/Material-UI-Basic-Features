@@ -22,6 +22,7 @@ import ButtonOutline from '../components/buttons/outlinedButton/ButtonOutline';
 import ButtonFloatingAction from '../components/buttons/floatingActionButton/ButtonFloatingAction';
 import ButtonActionItem from '../components/buttons/floatingActionButton/ButtonActionItem';
 import ButtonSize from '../components/buttons/sizedButton/ButtonSize';
+import ButtonIconLabel from '../components/buttons/iconsLabeledButtons/ButtonIconLabel';
 
 class Homes extends Component {
   render() {
@@ -53,6 +54,7 @@ class Homes extends Component {
           />
           <Route path="/button/floating-zoom" component={ButtonActionItem} />
           <Route path="/button/size" component={ButtonSize} />
+          <Route path="/button/icon-label" component={ButtonIconLabel} />
         </Switch>
       </div>
     );
