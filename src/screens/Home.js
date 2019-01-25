@@ -16,6 +16,11 @@ import BadgeVisibility from '../components/badges/badgeVisibility/BadgeVisibilit
 import BadgeCustomized from '../components/badges/customizedBadge/BadgeCustomized';
 import BottomNavigation from '../components/bottomNavigations/bottomNav/BottomNavigation';
 import BottomNavNoLabel from '../components/bottomNavigations/bottomNavNoLabels/BottomNavNoLabel';
+import ButtonContained from '../components/buttons/containedButtons/ButtonContained';
+import ButtonText from '../components/buttons/textButton/ButtonText';
+import ButtonOutline from '../components/buttons/outlinedButton/ButtonOutline';
+import ButtonFloatingAction from '../components/buttons/floatingActionButton/ButtonFloatingAction';
+import ButtonActionItem from '../components/buttons/floatingActionButton/ButtonActionItem';
 
 class Homes extends Component {
   render() {
@@ -38,6 +43,14 @@ class Homes extends Component {
           <Route path="/badge/customized" component={BadgeCustomized} />
           <Route path="/bottom/navigation" component={BottomNavigation} />
           <Route path="/bottom/no-label" component={BottomNavNoLabel} />
+          <Route path="/button/contained" component={ButtonContained} />
+          <Route path="/button/text" component={ButtonText} />
+          <Route path="/button/outline" component={ButtonOutline} />
+          <Route
+            path="/button/floating-action"
+            component={ButtonFloatingAction}
+          />
+          <Route path="/button/floating-zoom" component={ButtonActionItem} />
         </Switch>
       </div>
     );
