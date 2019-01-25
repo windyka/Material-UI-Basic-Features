@@ -25,6 +25,7 @@ import ButtonSize from '../components/buttons/sizedButton/ButtonSize';
 import ButtonIconLabel from '../components/buttons/iconsLabeledButtons/ButtonIconLabel';
 import ButtonIcon from '../components/buttons/iconButton/ButtonIcon';
 import ButtonCustomized from '../components/buttons/costumizedButtona/ButtonCustomized';
+import ButtonComplex from '../components/buttons/complexButtons/ButtonComplex';
 
 class Homes extends Component {
   render() {
@@ -59,6 +60,7 @@ class Homes extends Component {
           <Route path="/button/icon-label" component={ButtonIconLabel} />
           <Route path="/button/icons" component={ButtonIcon} />
           <Route path="/button/customized" component={ButtonCustomized} />
+          <Route path="/button/complex" component={ButtonComplex} />
         </Switch>
       </div>
     );
