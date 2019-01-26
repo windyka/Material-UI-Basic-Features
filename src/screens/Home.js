@@ -41,6 +41,7 @@ import DialogSizeOptional from '../components/dialogs/optionalSizeDialogs/Dialog
 import DialogResponsiveFullScreen from '../components/dialogs/responsiveFullScreens/DialogResponsiveFullScreen';
 import DialogConfirmation from '../components/dialogs/confirmationDialogs/DialogConfirmation';
 import ScrollDialog from '../components/dialogs/accessibilityDialogs/DialogAccessibility';
+import DraggableDialog from '../components/dialogs/draggableDialogs/DialogDraggable';
 
 class Homes extends Component {
   render() {
@@ -97,6 +98,7 @@ class Homes extends Component {
           />
           <Route path="/dialog/confirmation" component={DialogConfirmation} />
           <Route path="/dialog/accessibility" component={ScrollDialog} />
+          <Route path="/dialog/draggable" component={DraggableDialog} />
         </Switch>
       </div>
     );
