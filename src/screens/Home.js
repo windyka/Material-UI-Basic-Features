@@ -27,6 +27,7 @@ import CardSimple from '../components/cards/simpleCards/CardSimple';
 import CardComplexInteraction from '../components/cards/complexInteractionCards/CardComplexInteraction';
 import CardMedia from '../components/cards/mediaCards/CardMedia';
 import CardUiControl from '../components/cards/uiControlCards/CardUiControl';
+import Chip from '../components/chips/chip/Chip';
 
 class Homes extends Component {
   render() {
@@ -66,6 +67,7 @@ class Homes extends Component {
           />
           <Route path="/card/media" component={CardMedia} />
           <Route path="/card/ui-control" component={CardUiControl} />
+          <Route path="/chip" exact component={Chip} />
         </Switch>
       </div>
     );
