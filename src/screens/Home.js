@@ -39,6 +39,7 @@ import CustomizedDialogDemo from '../components/dialogs/customizedDialogs/Dialog
 import DialogFullScreen from '../components/dialogs/fullScreenDialogs/DialogFullScreen';
 import DialogSizeOptional from '../components/dialogs/optionalSizeDialogs/DialogSizeOptional';
 import DialogResponsiveFullScreen from '../components/dialogs/responsiveFullScreens/DialogResponsiveFullScreen';
+import DialogConfirmation from '../components/dialogs/confirmationDialogs/DialogConfirmation';
 
 class Homes extends Component {
   render() {
@@ -93,6 +94,7 @@ class Homes extends Component {
             path="/dialog/responsive-fullscreen"
             component={DialogResponsiveFullScreen}
           />
+          <Route path="/dialog/confirmation" component={DialogConfirmation} />
         </Switch>
       </div>
     );
