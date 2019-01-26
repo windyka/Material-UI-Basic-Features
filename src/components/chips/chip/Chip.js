@@ -1,87 +1,127 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import SkipNextIcon from '@material-ui/icons/SkipNext';
+import Avatar from '@material-ui/core/Avatar';
+import Chip from '@material-ui/core/Chip';
+import FaceIcon from '@material-ui/icons/Face';
+import DoneIcon from '@material-ui/icons/Done';
 
 const styles = theme => ({
-  card: {
-    display: 'flex'
-  },
-  details: {
+  root: {
     display: 'flex',
-    flexDirection: 'column'
+    justifyContent: 'center',
+    flexWrap: 'wrap'
   },
-  content: {
-    flex: '1 0 auto'
-  },
-  cover: {
-    width: 151
-  },
-  controls: {
-    display: 'flex',
-    alignItems: 'center',
-    paddingLeft: theme.spacing.unit,
-    paddingBottom: theme.spacing.unit
-  },
-  playIcon: {
-    height: 38,
-    width: 38
+  chip: {
+    margin: theme.spacing.unit
   }
 });
 
-function MediaControlCard(props) {
-  const { classes, theme } = props;
+function handleDelete() {
+  alert('You clicked the delete icon.'); // eslint-disable-line no-alert
+}
 
+function handleClick() {
+  alert('You clicked the Chip.'); // eslint-disable-line no-alert
+}
+
+function Chips(props) {
+  const { classes } = props;
   return (
-    <Card className={classes.card}>
-      <div className={classes.details}>
-        <CardContent className={classes.content}>
-          <Typography component="h5" variant="h5">
-            Live From Space
-          </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
-            Mac Miller
-          </Typography>
-        </CardContent>
-        <div className={classes.controls}>
-          <IconButton aria-label="Previous">
-            {theme.direction === 'rtl' ? (
-              <SkipNextIcon />
-            ) : (
-              <SkipPreviousIcon />
-            )}
-          </IconButton>
-          <IconButton aria-label="Play/pause">
-            <PlayArrowIcon className={classes.playIcon} />
-          </IconButton>
-          <IconButton aria-label="Next">
-            {theme.direction === 'rtl' ? (
-              <SkipPreviousIcon />
-            ) : (
-              <SkipNextIcon />
-            )}
-          </IconButton>
-        </div>
-      </div>
-      <CardMedia
-        className={classes.cover}
-        image="/static/images/cards/live-from-space.jpg"
-        title="Live from space album cover"
+    <div className={classes.root}>
+      <Chip label="Basic Chip" className={classes.chip} />
+      <Chip
+        avatar={<Avatar>MB</Avatar>}
+        label="Clickable Chip"
+        onClick={handleClick}
+        className={classes.chip}
       />
-    </Card>
+      <Chip
+        avatar={<Avatar alt="Natacha" src="/static/images/avatar/1.jpg" />}
+        label="Deletable Chip"
+        onDelete={handleDelete}
+        className={classes.chip}
+      />
+      <Chip
+        avatar={
+          <Avatar>
+            <FaceIcon />
+          </Avatar>
+        }
+        label="Clickable Deletable Chip"
+        onClick={handleClick}
+        onDelete={handleDelete}
+        className={classes.chip}
+      />
+      <Chip
+        icon={<FaceIcon />}
+        label="Clickable Deletable Chip"
+        onClick={handleClick}
+        onDelete={handleDelete}
+        className={classes.chip}
+      />
+      <Chip
+        label="Custom delete icon Chip"
+        onClick={handleClick}
+        onDelete={handleDelete}
+        className={classes.chip}
+        deleteIcon={<DoneIcon />}
+      />
+      <Chip
+        label="Clickable Link Chip"
+        className={classes.chip}
+        component="a"
+        href="#chip"
+        clickable
+      />
+      <Chip
+        avatar={<Avatar>MB</Avatar>}
+        label="Primary Clickable Chip"
+        clickable
+        className={classes.chip}
+        color="primary"
+        onDelete={handleDelete}
+        deleteIcon={<DoneIcon />}
+      />
+      <Chip
+        icon={<FaceIcon />}
+        label="Primary Clickable Chip"
+        clickable
+        className={classes.chip}
+        color="primary"
+        onDelete={handleDelete}
+        deleteIcon={<DoneIcon />}
+      />
+      <Chip
+        label="Deletable Primary Chip"
+        onDelete={handleDelete}
+        className={classes.chip}
+        color="primary"
+      />
+      <Chip
+        avatar={
+          <Avatar>
+            <FaceIcon />
+          </Avatar>
+        }
+        label="Deletable Secondary Chip"
+        onDelete={handleDelete}
+        className={classes.chip}
+        color="secondary"
+      />
+      <Chip
+        icon={<FaceIcon />}
+        label="Deletable Secondary Chip"
+        onDelete={handleDelete}
+        className={classes.chip}
+        color="secondary"
+      />
+    </div>
   );
 }
 
-MediaControlCard.propTypes = {
-  classes: PropTypes.object.isRequired,
-  theme: PropTypes.object.isRequired
+Chips.propTypes = {
+  classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles, { withTheme: true })(MediaControlCard);
+export default withStyles(styles)(Chips);
