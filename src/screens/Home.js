@@ -29,6 +29,7 @@ import CardMedia from '../components/cards/mediaCards/CardMedia';
 import CardUiControl from '../components/cards/uiControlCards/CardUiControl';
 import Chip from '../components/chips/chip/Chip';
 import ChipOutlined from '../components/chips/outlinedChips/ChipOutlined';
+import ChipArray from '../components/chips/arrayChips/ChipArray';
 
 class Homes extends Component {
   render() {
@@ -70,6 +71,7 @@ class Homes extends Component {
           <Route path="/card/ui-control" component={CardUiControl} />
           <Route path="/chip" exact component={Chip} />
           <Route path="/chip/outlined" component={ChipOutlined} />
+          <Route path="/chip/array" component={ChipArray} />
         </Switch>
       </div>
     );
