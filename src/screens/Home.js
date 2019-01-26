@@ -31,6 +31,9 @@ import Chip from '../components/chips/chip/Chip';
 import ChipOutlined from '../components/chips/outlinedChips/ChipOutlined';
 import ChipArray from '../components/chips/arrayChips/ChipArray';
 import ChipPlayground from '../components/chips/chipPlayground/ChipPlayground';
+import SimpleDialogDemo from '../components/dialogs/simpleDialogs/DialogSimple';
+import AlertDialog from '../components/dialogs/alertDialogs/openAlertDialogs/DialogOpenAlert';
+import AlertDialogSlide from '../components/dialogs/alertDialogs/slideInAlertDialogs/DialogSlide';
 
 class Homes extends Component {
   render() {
@@ -74,6 +77,9 @@ class Homes extends Component {
           <Route path="/chip/outlined" component={ChipOutlined} />
           <Route path="/chip/array" component={ChipArray} />
           <Route path="/chip/playground" component={ChipPlayground} />
+          <Route path="/dialog/simple" component={SimpleDialogDemo} />
+          <Route path="/dialog/alert/open" component={AlertDialog} />
+          <Route path="/dialog/slide" component={AlertDialogSlide} />
         </Switch>
       </div>
     );
