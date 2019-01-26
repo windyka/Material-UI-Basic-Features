@@ -25,6 +25,7 @@ import ButtonSize from '../components/buttons/sizedButton/ButtonSize';
 import ButtonIconLabel from '../components/buttons/iconsLabeledButtons/ButtonIconLabel';
 import CardSimple from '../components/cards/simpleCards/CardSimple';
 import CardComplexInteraction from '../components/cards/complexInteractionCards/CardComplexInteraction';
+import CardMedia from '../components/cards/mediaCards/CardMedia';
 
 class Homes extends Component {
   render() {
@@ -62,6 +63,7 @@ class Homes extends Component {
             path="/card/complex-interaction"
             component={CardComplexInteraction}
           />
+          <Route path="/card/media" component={CardMedia} />
         </Switch>
       </div>
     );
