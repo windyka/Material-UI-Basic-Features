@@ -30,6 +30,7 @@ import CardUiControl from '../components/cards/uiControlCards/CardUiControl';
 import Chip from '../components/chips/chip/Chip';
 import ChipOutlined from '../components/chips/outlinedChips/ChipOutlined';
 import ChipArray from '../components/chips/arrayChips/ChipArray';
+import ChipPlayground from '../components/chips/chipPlayground/ChipPlayground';
 
 class Homes extends Component {
   render() {
@@ -72,6 +73,7 @@ class Homes extends Component {
           <Route path="/chip" exact component={Chip} />
           <Route path="/chip/outlined" component={ChipOutlined} />
           <Route path="/chip/array" component={ChipArray} />
+          <Route path="/chip/playground" component={ChipPlayground} />
         </Switch>
       </div>
     );
