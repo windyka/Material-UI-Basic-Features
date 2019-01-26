@@ -21,6 +21,12 @@ import ButtonText from '../components/buttons/textButton/ButtonText';
 import ButtonOutline from '../components/buttons/outlinedButton/ButtonOutline';
 import ButtonFloatingAction from '../components/buttons/floatingActionButton/ButtonFloatingAction';
 import ButtonActionItem from '../components/buttons/floatingActionButton/ButtonActionItem';
+import ButtonSize from '../components/buttons/sizedButton/ButtonSize';
+import ButtonIconLabel from '../components/buttons/iconsLabeledButtons/ButtonIconLabel';
+import CardSimple from '../components/cards/simpleCards/CardSimple';
+import CardComplexInteraction from '../components/cards/complexInteractionCards/CardComplexInteraction';
+import CardMedia from '../components/cards/mediaCards/CardMedia';
+import CardUiControl from '../components/cards/uiControlCards/CardUiControl';
 
 class Homes extends Component {
   render() {
@@ -51,6 +57,15 @@ class Homes extends Component {
             component={ButtonFloatingAction}
           />
           <Route path="/button/floating-zoom" component={ButtonActionItem} />
+          <Route path="/button/size" component={ButtonSize} />
+          <Route path="/button/icon-label" component={ButtonIconLabel} />
+          <Route path="/card/simple" component={CardSimple} />
+          <Route
+            path="/card/complex-interaction"
+            component={CardComplexInteraction}
+          />
+          <Route path="/card/media" component={CardMedia} />
+          <Route path="/card/ui-control" component={CardUiControl} />
         </Switch>
       </div>
     );
