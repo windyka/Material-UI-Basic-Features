@@ -37,6 +37,7 @@ import AlertDialogSlide from '../components/dialogs/alertDialogs/slideInAlertDia
 import FormDialog from '../components/dialogs/formDialogs/DialogForm';
 import CustomizedDialogDemo from '../components/dialogs/customizedDialogs/DialogCustomized';
 import DialogFullScreen from '../components/dialogs/fullScreenDialogs/DialogFullScreen';
+import DialogSizeOptional from '../components/dialogs/optionalSizeDialog/DialogSizeOptional';
 
 class Homes extends Component {
   render() {
@@ -86,6 +87,7 @@ class Homes extends Component {
           <Route path="/dialog/form" component={FormDialog} />
           <Route path="/dialog/customized" component={CustomizedDialogDemo} />
           <Route path="/dialog/fullscreen" component={DialogFullScreen} />
+          <Route path="/dialog/option-size" component={DialogSizeOptional} />
         </Switch>
       </div>
     );
