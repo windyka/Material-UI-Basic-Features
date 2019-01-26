@@ -35,6 +35,7 @@ import SimpleDialogDemo from '../components/dialogs/simpleDialogs/DialogSimple';
 import AlertDialog from '../components/dialogs/alertDialogs/openAlertDialogs/DialogOpenAlert';
 import AlertDialogSlide from '../components/dialogs/alertDialogs/slideInAlertDialogs/DialogSlide';
 import FormDialog from '../components/dialogs/formDialogs/DialogForm';
+import CustomizedDialogDemo from '../components/dialogs/customizedDialogs/DialogCustomized';
 
 class Homes extends Component {
   render() {
@@ -82,6 +83,7 @@ class Homes extends Component {
           <Route path="/dialog/alert/open" component={AlertDialog} />
           <Route path="/dialog/slide" component={AlertDialogSlide} />
           <Route path="/dialog/form" component={FormDialog} />
+          <Route path="/dialog/customized" component={CustomizedDialogDemo} />
         </Switch>
       </div>
     );
