@@ -40,6 +40,7 @@ import DialogFullScreen from '../components/dialogs/fullScreenDialogs/DialogFull
 import DialogSizeOptional from '../components/dialogs/optionalSizeDialogs/DialogSizeOptional';
 import DialogResponsiveFullScreen from '../components/dialogs/responsiveFullScreens/DialogResponsiveFullScreen';
 import DialogConfirmation from '../components/dialogs/confirmationDialogs/DialogConfirmation';
+import ScrollDialog from '../components/dialogs/accessibilityDialogs/DialogAccessibility';
 
 class Homes extends Component {
   render() {
@@ -95,6 +96,7 @@ class Homes extends Component {
             component={DialogResponsiveFullScreen}
           />
           <Route path="/dialog/confirmation" component={DialogConfirmation} />
+          <Route path="/dialog/accessibility" component={ScrollDialog} />
         </Switch>
       </div>
     );
