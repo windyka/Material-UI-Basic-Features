@@ -31,6 +31,21 @@ import Chip from '../components/chips/chip/Chip';
 import ChipOutlined from '../components/chips/outlinedChips/ChipOutlined';
 import ChipArray from '../components/chips/arrayChips/ChipArray';
 import ChipPlayground from '../components/chips/chipPlayground/ChipPlayground';
+import SimpleDialogDemo from '../components/dialogs/simpleDialogs/DialogSimple';
+import AlertDialog from '../components/dialogs/alertDialogs/openAlertDialogs/DialogOpenAlert';
+import AlertDialogSlide from '../components/dialogs/alertDialogs/slideInAlertDialogs/DialogSlide';
+import FormDialog from '../components/dialogs/formDialogs/DialogForm';
+import CustomizedDialogDemo from '../components/dialogs/customizedDialogs/DialogCustomized';
+import DialogFullScreen from '../components/dialogs/fullScreenDialogs/DialogFullScreen';
+import DialogSizeOptional from '../components/dialogs/optionalSizeDialogs/DialogSizeOptional';
+import DialogResponsiveFullScreen from '../components/dialogs/responsiveFullScreens/DialogResponsiveFullScreen';
+import DialogConfirmation from '../components/dialogs/confirmationDialogs/DialogConfirmation';
+import ScrollDialog from '../components/dialogs/accessibilityDialogs/DialogAccessibility';
+import DraggableDialog from '../components/dialogs/draggableDialogs/DialogDraggable';
+import DividerList from '../components/dividers/listDivider/DividerList';
+import DividerInset from '../components/dividers/insetDividers/DividerInset';
+import DividerSubhead from '../components/dividers/subheadDividers/DividerSubhead';
+import DividerMiddle from '../components/dividers/middleDividers/DividerMiddle';
 
 class Homes extends Component {
   render() {
@@ -74,6 +89,24 @@ class Homes extends Component {
           <Route path="/chip/outlined" component={ChipOutlined} />
           <Route path="/chip/array" component={ChipArray} />
           <Route path="/chip/playground" component={ChipPlayground} />
+          <Route path="/dialog/simple" component={SimpleDialogDemo} />
+          <Route path="/dialog/alert/open" component={AlertDialog} />
+          <Route path="/dialog/slide" component={AlertDialogSlide} />
+          <Route path="/dialog/form" component={FormDialog} />
+          <Route path="/dialog/customized" component={CustomizedDialogDemo} />
+          <Route path="/dialog/fullscreen" component={DialogFullScreen} />
+          <Route path="/dialog/option-size" component={DialogSizeOptional} />
+          <Route
+            path="/dialog/responsive-fullscreen"
+            component={DialogResponsiveFullScreen}
+          />
+          <Route path="/dialog/confirmation" component={DialogConfirmation} />
+          <Route path="/dialog/accessibility" component={ScrollDialog} />
+          <Route path="/dialog/draggable" component={DraggableDialog} />
+          <Route path="/divider/list" component={DividerList} />
+          <Route path="/divider/inset" component={DividerInset} />
+          <Route path="/divider/subhead" component={DividerSubhead} />
+          <Route path="/divider/middle" component={DividerMiddle} />
         </Switch>
       </div>
     );
