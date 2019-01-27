@@ -51,6 +51,7 @@ import DrawerSwipeable from '../components/drawers/swipeableDrawers/DrawerSwipea
 import DrawerResponsive from '../components/drawers/responsiveDrawers/DrawerResponsive';
 import DrawerPersistentLeft from '../components/drawers/persistentDrawers/persistentLeftDrawers/DrawerPersistentLeft';
 import DrawerPersistentRight from '../components/drawers/persistentDrawers/persistentRightDrawers/DrawerPersistentRight';
+import DrawerMiniVariant from '../components/drawers/miniVariantDrawers/DrawerMiniVariant';
 
 class Homes extends Component {
   render() {
@@ -123,6 +124,7 @@ class Homes extends Component {
             path="/drawer/persistent/right"
             component={DrawerPersistentRight}
           />
+          <Route path="/drawer/mini" component={DrawerMiniVariant} />
         </Switch>
       </div>
     );
