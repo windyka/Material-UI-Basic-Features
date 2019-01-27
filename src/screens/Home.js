@@ -49,6 +49,8 @@ import DividerMiddle from '../components/dividers/middleDividers/DividerMiddle';
 import DrawerTemporary from '../components/drawers/temporaryDrawers/DrawerTemporary';
 import DrawerSwipeable from '../components/drawers/swipeableDrawers/DrawerSwipeable';
 import DrawerResponsive from '../components/drawers/responsiveDrawers/DrawerResponsive';
+import DrawerPersistentLeft from '../components/drawers/persistentDrawers/persistentLeftDrawers/DrawerPersistentLeft';
+import DrawerPersistentRight from '../components/drawers/persistentDrawers/persistentRightDrawers/DrawerPersistentRight';
 
 class Homes extends Component {
   render() {
@@ -113,6 +115,14 @@ class Homes extends Component {
           <Route path="/drawer/temporary" component={DrawerTemporary} />
           <Route path="/drawer/swipeable" component={DrawerSwipeable} />
           <Route path="/drawer/responsive" component={DrawerResponsive} />
+          <Route
+            path="/drawer/persistent/left"
+            component={DrawerPersistentLeft}
+          />
+          <Route
+            path="/drawer/persistent/right"
+            component={DrawerPersistentRight}
+          />
         </Switch>
       </div>
     );
