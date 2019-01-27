@@ -47,6 +47,7 @@ import DividerInset from '../components/dividers/insetDividers/DividerInset';
 import DividerSubhead from '../components/dividers/subheadDividers/DividerSubhead';
 import DividerMiddle from '../components/dividers/middleDividers/DividerMiddle';
 import DrawerTemporary from '../components/drawers/temporaryDrawers/DrawerTemporary';
+import DrawerSwipeable from '../components/drawers/swipeableDrawers/DrawerSwipeable';
 
 class Homes extends Component {
   render() {
@@ -109,6 +110,7 @@ class Homes extends Component {
           <Route path="/divider/subhead" component={DividerSubhead} />
           <Route path="/divider/middle" component={DividerMiddle} />
           <Route path="/drawer/temporary" component={DrawerTemporary} />
+          <Route path="/drawer/swipeable" component={DrawerSwipeable} />
         </Switch>
       </div>
     );
