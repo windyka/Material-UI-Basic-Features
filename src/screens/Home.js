@@ -46,6 +46,15 @@ import DividerList from '../components/dividers/listDivider/DividerList';
 import DividerInset from '../components/dividers/insetDividers/DividerInset';
 import DividerSubhead from '../components/dividers/subheadDividers/DividerSubhead';
 import DividerMiddle from '../components/dividers/middleDividers/DividerMiddle';
+import DrawerTemporary from '../components/drawers/temporaryDrawers/DrawerTemporary';
+import DrawerSwipeable from '../components/drawers/swipeableDrawers/DrawerSwipeable';
+import DrawerResponsive from '../components/drawers/responsiveDrawers/DrawerResponsive';
+import DrawerPersistentLeft from '../components/drawers/persistentDrawers/persistentLeftDrawers/DrawerPersistentLeft';
+import DrawerPersistentRight from '../components/drawers/persistentDrawers/persistentRightDrawers/DrawerPersistentRight';
+import DrawerMiniVariant from '../components/drawers/miniVariantDrawers/DrawerMiniVariant';
+import DrawerPermanentLeft from '../components/drawers/permanentDrawers/permanentDrawerLeft/DrawerPermanentLeft';
+import DrawerPermanentRight from '../components/drawers/permanentDrawers/permanentDrawerRight/DrawerPermanentRight';
+import DrawerClippedUnderBar from '../components/drawers/clippedUnderBar/DrawerClippedUnderBar';
 
 class Homes extends Component {
   render() {
@@ -107,6 +116,27 @@ class Homes extends Component {
           <Route path="/divider/inset" component={DividerInset} />
           <Route path="/divider/subhead" component={DividerSubhead} />
           <Route path="/divider/middle" component={DividerMiddle} />
+          <Route path="/drawer/temporary" component={DrawerTemporary} />
+          <Route path="/drawer/swipeable" component={DrawerSwipeable} />
+          <Route path="/drawer/responsive" component={DrawerResponsive} />
+          <Route
+            path="/drawer/persistent/left"
+            component={DrawerPersistentLeft}
+          />
+          <Route
+            path="/drawer/persistent/right"
+            component={DrawerPersistentRight}
+          />
+          <Route path="/drawer/mini" component={DrawerMiniVariant} />
+          <Route
+            path="/drawer/permanent/left"
+            component={DrawerPermanentLeft}
+          />
+          <Route
+            path="/drawer/permanent/right"
+            component={DrawerPermanentRight}
+          />
+          <Route path="/drawer/clipped" component={DrawerClippedUnderBar} />
         </Switch>
       </div>
     );
