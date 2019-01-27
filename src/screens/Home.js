@@ -54,6 +54,7 @@ import DrawerPersistentRight from '../components/drawers/persistentDrawers/persi
 import DrawerMiniVariant from '../components/drawers/miniVariantDrawers/DrawerMiniVariant';
 import DrawerPermanentLeft from '../components/drawers/permanentDrawers/permanentDrawerLeft/DrawerPermanentLeft';
 import DrawerPermanentRight from '../components/drawers/permanentDrawers/permanentDrawerRight/DrawerPermanentRight';
+import DrawerClippedUnderBar from '../components/drawers/clippedUnderBar/DrawerClippedUnderBar';
 
 class Homes extends Component {
   render() {
@@ -135,6 +136,7 @@ class Homes extends Component {
             path="/drawer/permanent/right"
             component={DrawerPermanentRight}
           />
+          <Route path="/drawer/clipped" component={DrawerClippedUnderBar} />
         </Switch>
       </div>
     );
