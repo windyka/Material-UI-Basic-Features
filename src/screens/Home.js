@@ -45,6 +45,7 @@ import DraggableDialog from '../components/dialogs/draggableDialogs/DialogDragga
 import DividerList from '../components/dividers/listDivider/DividerList';
 import DividerInset from '../components/dividers/insetDividers/DividerInset';
 import DividerSubhead from '../components/dividers/subheadDividers/DividerSubhead';
+import DividerMiddle from '../components/dividers/middleDividers/DividerMiddle';
 
 class Homes extends Component {
   render() {
@@ -105,6 +106,7 @@ class Homes extends Component {
           <Route path="/divider/list" component={DividerList} />
           <Route path="/divider/inset" component={DividerInset} />
           <Route path="/divider/subhead" component={DividerSubhead} />
+          <Route path="/divider/middle" component={DividerMiddle} />
         </Switch>
       </div>
     );
