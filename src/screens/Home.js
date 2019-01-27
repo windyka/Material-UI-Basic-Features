@@ -43,6 +43,7 @@ import DialogConfirmation from '../components/dialogs/confirmationDialogs/Dialog
 import ScrollDialog from '../components/dialogs/accessibilityDialogs/DialogAccessibility';
 import DraggableDialog from '../components/dialogs/draggableDialogs/DialogDraggable';
 import DividerList from '../components/dividers/listDivider/DividerList';
+import DividerInset from '../components/dividers/insetDividers/DividerInset';
 
 class Homes extends Component {
   render() {
@@ -101,6 +102,7 @@ class Homes extends Component {
           <Route path="/dialog/accessibility" component={ScrollDialog} />
           <Route path="/dialog/draggable" component={DraggableDialog} />
           <Route path="/divider/list" component={DividerList} />
+          <Route path="/divider/inset" component={DividerInset} />
         </Switch>
       </div>
     );
