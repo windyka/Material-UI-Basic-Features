@@ -52,6 +52,8 @@ import DrawerResponsive from '../components/drawers/responsiveDrawers/DrawerResp
 import DrawerPersistentLeft from '../components/drawers/persistentDrawers/persistentLeftDrawers/DrawerPersistentLeft';
 import DrawerPersistentRight from '../components/drawers/persistentDrawers/persistentRightDrawers/DrawerPersistentRight';
 import DrawerMiniVariant from '../components/drawers/miniVariantDrawers/DrawerMiniVariant';
+import DrawerPermanentLeft from '../components/drawers/permanentDrawers/permanentDrawerLeft/DrawerPermanentLeft';
+import DrawerPermanentRight from '../components/drawers/permanentDrawers/permanentDrawerRight/DrawerPermanentRight';
 
 class Homes extends Component {
   render() {
@@ -125,6 +127,14 @@ class Homes extends Component {
             component={DrawerPersistentRight}
           />
           <Route path="/drawer/mini" component={DrawerMiniVariant} />
+          <Route
+            path="/drawer/permanent/left"
+            component={DrawerPermanentLeft}
+          />
+          <Route
+            path="/drawer/permanent/right"
+            component={DrawerPermanentRight}
+          />
         </Switch>
       </div>
     );
