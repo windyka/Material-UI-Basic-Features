@@ -56,6 +56,7 @@ import DrawerPermanentLeft from '../components/drawers/permanentDrawers/permanen
 import DrawerPermanentRight from '../components/drawers/permanentDrawers/permanentDrawerRight/DrawerPermanentRight';
 import DrawerClippedUnderBar from '../components/drawers/clippedUnderBar/DrawerClippedUnderBar';
 import ExpansionSimple from '../components/expansionPanels/simpleExpansionPanels/ExpansionSimple';
+import ExpansionControlledAccordion from '../components/expansionPanels/controlledAccordionPanels/ExpansionControlledAccordion';
 
 class Homes extends Component {
   render() {
@@ -139,6 +140,10 @@ class Homes extends Component {
           />
           <Route path="/drawer/clipped" component={DrawerClippedUnderBar} />
           <Route path="/expansion-panel/simple" component={ExpansionSimple} />
+          <Route
+            path="/expansion-panel/controlled"
+            component={ExpansionControlledAccordion}
+          />
         </Switch>
       </div>
     );
