@@ -55,6 +55,10 @@ import DrawerMiniVariant from '../components/drawers/miniVariantDrawers/DrawerMi
 import DrawerPermanentLeft from '../components/drawers/permanentDrawers/permanentDrawerLeft/DrawerPermanentLeft';
 import DrawerPermanentRight from '../components/drawers/permanentDrawers/permanentDrawerRight/DrawerPermanentRight';
 import DrawerClippedUnderBar from '../components/drawers/clippedUnderBar/DrawerClippedUnderBar';
+import ExpansionSimple from '../components/expansionPanels/simpleExpansionPanels/ExpansionSimple';
+import ExpansionControlledAccordion from '../components/expansionPanels/controlledAccordionPanels/ExpansionControlledAccordion';
+import ExpansionSecondaryHeadingColumn from '../components/expansionPanels/secondaryHeading-Columns/ExpansionSecondaryHeadingColumn';
+import CustomizedExpansionPanel from '../components/expansionPanels/customizedExpansions/ExpansionCustomized';
 
 class Homes extends Component {
   render() {
@@ -137,6 +141,19 @@ class Homes extends Component {
             component={DrawerPermanentRight}
           />
           <Route path="/drawer/clipped" component={DrawerClippedUnderBar} />
+          <Route path="/expansion-panel/simple" component={ExpansionSimple} />
+          <Route
+            path="/expansion-panel/controlled"
+            component={ExpansionControlledAccordion}
+          />
+          <Route
+            path="/expansion-panel/detailed"
+            component={ExpansionSecondaryHeadingColumn}
+          />
+          <Route
+            path="/expansion-panel/customized"
+            component={CustomizedExpansionPanel}
+          />
         </Switch>
       </div>
     );
